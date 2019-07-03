@@ -6,11 +6,16 @@
   <head>
     <meta charset="utf-8">
     <title>Bootstrap Practice</title>
+    <!-- STYLE -->
+    <link rel="stylesheet" href="index.css">
+    <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="index.css">
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans&display=swap" rel="stylesheet">
+
   </head>
 
 
@@ -18,11 +23,14 @@
 
     <!-- NAV BAR -->
     <nav class="navbar navbar-expand-md fixed-top navbar-dark" style="background-color: #1d2b3d;">
-      <a class="navbar-brand" href="#">Annette's Interests </a>
 
+      <div class="logo">
+        <img src="Light-Grey-PNG.png" alt="A.I.A. Logo" height="35px">
+      </div>
 
+      <a class="navbar-brand" href="#" id="top">Annette's Interests </a>
 
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <div id="navbarTogglerDemo02">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item">
             <a class="nav-link" href="#astro">Astronomy</a>
@@ -40,8 +48,45 @@
 
 
     <p>
-      <h1>ANNETTE'S INTERESTS</h1>
+      <h1 id="header"><b>Annette's Interests</b></h1>
     </p>
+
+
+    <!-- HISTORY AND ANTHROPOLOGY -->
+    <h3 id="history">HISTORY & ANTHROPOLOGY</h3>
+    <div class="card-group">
+
+      <!-- CARD #1 -->
+      <div class="card">
+        <img src="https://i1.wp.com/lilyoverseas.com/wp-content/uploads/2017/09/Viking-Ship-Museum-Oseberg-Ship-3-Feature.jpg?fit=1200%2C900" class="card-img-top" alt="..." height=350px>
+        <div class="card-body">
+          <h5 class="card-title">Viking People</h5>
+          <p class="card-text">The Oseberg Ship, discovered in Norway, was found with the remains of two women aboard. After examining the luxurious artifacts found near the women, and studying their particular layout, this is believed to be the burial site of a ruler accompanied by her servant.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+
+      <!-- CARD #2 -->
+      <div class="card">
+        <img src="https://i.pinimg.com/originals/35/c3/90/35c390473df692feefc253ce287214a8.jpg" class="card-img-top" alt="..." height=350px>
+        <div class="card-body">
+          <h5 class="card-title">Mayan Civilization</h5>
+          <p class="card-text">Frescoes like these were found at the Bonampak Mayan Archaeological Site. In three separate buildings, they depict the presentation and ascension to the throne of of a young Nobleman, a battle scene, and a post-war celebration including dancing and rituals. This smaller city-state thrived during the late-classic period (600-900 C.E.).</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+
+      <!-- CARD #3 -->
+      <div class="card">
+        <img src="https://2.bp.blogspot.com/-8qECThbEnIM/T7gmOQtmUvI/AAAAAAAAH3s/TZDQuQ9rK_c/s1600/1205060118.jpg" class="card-img-top" alt="..." height=350px>
+        <div class="card-body">
+          <h5 class="card-title">Roman Empire</h5>
+          <p class="card-text">A statue of Marcus Aurelius, a Roman emperor and Stoic Philosopher who's reign was the last before the end of the Pax Romana (161 C.E. to 180 C.E.).</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+
+    </div>
 
     <!-- ASTRONOMY -->
     <h3 id="astro">ASTRONOMY</h3>
@@ -80,42 +125,6 @@
 
     </div>
 
-    <!-- HISTORY AND ANTHROPOLOGY -->
-    <h3 id="history">HISTORY AND ANTHROPOLOGY</h3>
-    <div class="card-group">
-
-      <!-- CARD #1 -->
-      <div class="card">
-        <img src="https://i1.wp.com/lilyoverseas.com/wp-content/uploads/2017/09/Viking-Ship-Museum-Oseberg-Ship-3-Feature.jpg?fit=1200%2C900" class="card-img-top" alt="..." height=350px>
-        <div class="card-body">
-          <h5 class="card-title">Viking People</h5>
-          <p class="card-text">The Oseberg Ship, discovered in Norway, was found with the remains of two women aboard. After examining the luxurious artifacts found near the women, and studying their particular layout, this is believed to be the burial site of a ruler accompanied by her servant.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-
-      <!-- CARD #2 -->
-      <div class="card">
-        <img src="https://i.pinimg.com/originals/35/c3/90/35c390473df692feefc253ce287214a8.jpg" class="card-img-top" alt="..." height=350px>
-        <div class="card-body">
-          <h5 class="card-title">Mayan Civilization</h5>
-          <p class="card-text">Frescoes like these were found at the Bonampak Mayan Archaeological Site. In three separate buildings, they depict the presentation and ascension to the throne of of a young Nobleman, a battle scene, and a post-war celebration including dancing and rituals. This smaller city-state thrived during the late-classic period (600-900 C.E.).</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-
-      <!-- CARD #3 -->
-      <div class="card">
-        <img src="https://2.bp.blogspot.com/-8qECThbEnIM/T7gmOQtmUvI/AAAAAAAAH3s/TZDQuQ9rK_c/s1600/1205060118.jpg" class="card-img-top" alt="..." height=350px>
-        <div class="card-body">
-          <h5 class="card-title">Roman Empire</h5>
-          <p class="card-text">A statue of Marcus Aurelius, a Roman emperor and Stoic Philosopher who's reign was the last before the end of the Pax Romana (161 C.E. to 180 C.E.).</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-
-    </div>
-
     <!-- CONSERVATION -->
     <h3 id="nature">CONSERVATION</h3>
     <div class="card-group">
@@ -150,6 +159,12 @@
         </div>
       </div>
 
+    </div>
+
+    <div>
+      <p>
+        <a href="#top" id="back-to-top"><b>BACK TO TOP</b></a>
+      </p>
     </div>
 
     <footer align="center">
@@ -191,9 +206,15 @@
                   <label for="formMessage">What's Up?</label>
                   <textarea class="form-control" rows="4"></textarea>
               </div>
-              <button type="submit" class="btn btn-success">Submit</button>
+              <button type="submit" class="btn btn-success btn-block">Submit</button>
           </form>
         </div>
+      </div>
+
+      <div>
+        <p>
+          <p>© 2019 Annette Aristide</p>
+        </p>
       </div>
 
     </footer>
